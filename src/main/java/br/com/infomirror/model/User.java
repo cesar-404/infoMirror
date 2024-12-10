@@ -1,6 +1,8 @@
 package br.com.infomirror.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Past;
 
 import java.time.LocalDate;
 
@@ -14,11 +16,12 @@ public class User {
 
     private String username;
 
+    @Past
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     private LocalDate birthDate;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "###.###.###-##")
     private String cpf;
-
-    private String cep;
 
     @Embedded
     private Address address;
@@ -56,14 +59,6 @@ public class User {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public String getCep() {
-        return cep;
-    }
-
-    public void setCep(String cep) {
-        this.cep = cep;
     }
 
     public Address getAddress() {

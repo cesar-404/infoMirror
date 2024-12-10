@@ -1,9 +1,11 @@
 package br.com.infomirror.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.validation.constraints.NotBlank;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public record AddressDto(String cep,
                          String logradouro,
-                         String numero,
-                         String complemento,
                          String bairro,
                          String localidade,
                          String uf,

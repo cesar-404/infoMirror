@@ -1,17 +1,15 @@
 package br.com.infomirror.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class Address {
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "#####-###")
     private String cep;
 
     private String logradouro;
-
-    private String numero;
-
-    private String complemento;
 
     private String bairro;
 
@@ -38,22 +36,6 @@ public class Address {
 
     public void setLogradouro(String logradouro) {
         this.logradouro = logradouro;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-    public String getComplemento() {
-        return complemento;
-    }
-
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
     }
 
     public String getBairro() {

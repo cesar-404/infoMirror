@@ -16,7 +16,7 @@ public class ViaCepService {
     public AddressDto getAddress(String cep) {
         return webClient
                 .get()
-                .uri("viacep.com.br/ws/"+cep+"/json/")
+                .uri("https://viacep.com.br/ws/"+cep+"/json/")
                 .retrieve()
                 .bodyToMono(AddressDto.class)
                 .block();
