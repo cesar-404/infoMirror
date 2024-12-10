@@ -31,7 +31,7 @@ The theme of this project is building a RESTful API for user management, focusin
 ### prerequisites
 
 - Java (version 11 or above) - to run the Spring Boot application.
-- Maven - for building the project (depending on which build tool the project uses).
+- Maven - for building the project
 - Drocker to run the docker-compose with PostgreSQL
 
 Clone the repository
