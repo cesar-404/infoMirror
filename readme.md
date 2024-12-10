@@ -55,9 +55,7 @@ mvn spring-boot:run
 
 ### Example of the API running
 
-[watch the example](/src/content/Screencast%20From%202024-12-10%2018-25-04.mp4)
-
-#### Images
+#### Image
 
 ![image](/src/content/Screenshot%20From%202024-12-10%2018-42-23.png)
 
