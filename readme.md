@@ -17,7 +17,6 @@ The theme of this project is building a RESTful API for user management, focusin
 - Java 23
 - Spring Boot 3
 - Docker
-- MVC
 - Spring Web
 - Spring JPA
 - Spring Validation
